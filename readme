@@ -1,0 +1,13 @@
+
+## site yönetimi
+
+Sitenin yönlendirme sistemi 
+
+/controller/fonksiyon/argüman/argüman....
+
+şeklindedir
+
+
+site içinde ürün ekleme, çıkarma, silme, düzenleme, satış listesi tutma işlemleri yapılmaktadır.
+
+tablolar arası ilişkiler oluşturulmuştur. 
