@@ -20,42 +20,31 @@
                 </tr>
             </thead>
             <tbody>
+
+            <?php if (!isset($data)){ ?>
+
+            <?php foreach($data as $d): ?>
+
                 <tr>
-                    <td>1</td>
-                    <td>822552555</td>
-                    <td>Ülker çikolatalı gofret</td>
-                    <td>15</td>
-                    <td>Atıştırmalık</td>
-                    <td>2.75 tl</td>
+                    <td><?php echo  $d["id"]?></td>
+                    <td><?php echo  $d["barcode"]?></td>
+                    <td><?php echo  $d["name"]?></td>
+                    <td><?php echo  $d["count"]?></td>
+                    <td><?php echo  $d["category_name"]?></td>
+                    <td><?php echo  $d["price"]?></td>
                     <td>
-                        <a href="#"><img src="<?=ASSETS?>market/img/edit.svg"></a>
-                        <a href="#"><img src="<?=ASSETS?>market/img/delete.svg"></a>
+                        <a href="productcon/add/<?= $d["id"]?>"><img src="<?=ASSETS?>market/img/edit.svg"></a>
+                        <a href="productcon/delete/<?= $d["id"]?>"><img src="<?=ASSETS?>market/img/delete.svg"></a>
                     </td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>822552555</td>
-                    <td>Ülker çikolatalı gofret</td>
-                    <td>15</td>
-                    <td>Atıştırmalık</td>
-                    <td>2.75 tl</td>
-                    <td>
-                        <a href="#"><img src="<?=ASSETS?>market/img/edit.svg"></a>
-                        <a href="#"><img src="<?=ASSETS?>market/img/delete.svg"></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>822552555</td>
-                    <td>Ülker çikolatalı gofret</td>
-                    <td>15</td>
-                    <td>Atıştırmalık</td>
-                    <td>2.75 tl</td>
-                    <td>
-                        <a href="#"><img src="<?=ASSETS?>market/img/edit.svg"></a>
-                        <a href="#"><img src="<?=ASSETS?>market/img/delete.svg"></a>
-                    </td>
-                </tr>
+
+
+            <?php endforeach ?>
+
+            <?php } ?>
+
+
+
             </tbody>
         </table>
     </div>
