@@ -1,0 +1,76 @@
+/* -------------------- ROOT DEĞİŞKENLERİ -------------------- */
+
+:root {
+    --color-blue-90: #161C2D;
+    --color-blue-80: #202942;
+    --color-blue-70: #3C4858;
+    --color-blue-50: #8492A6;
+    --color-blue: #2F55D4;
+    --color-white: #fff;
+
+    --border-radius: 0.3rem;
+    --border-width: 0.1rem;
+
+    --margin: 2rem;
+    --margin-main: 10%;
+
+    --padding-footer: 1rem;
+
+}
+
+/* -------------------- RESET CSS -------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.text-box{
+    border: var(--border-width) solid var(--color-blue-50);
+    display: block;
+}
+
+.radio-input{
+    width: 1rem;
+    height: 1rem;
+}
+
+.btn-blue{
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    height: 2rem;
+}
+
+.btn-blue:hover {
+    color: var(--color-blue);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-blue);
+}
+
+.custom-input{
+    border: 1px solid var(--color-blue-50);
+    border-radius: 2px;
+    padding: 0.2rem;
+    padding: 1rem;
+    
+}

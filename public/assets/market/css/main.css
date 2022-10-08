@@ -1,0 +1,369 @@
+/* -------------------- NAVIGATION BAR -------------------- */
+
+header {
+    background-color: var(--color-white);
+    width: 100%;
+    padding: 20px 10%;
+    display: block;
+    left: 0;
+    top: 0;
+}
+
+header img{
+    display: none;
+    float: right;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+header h1 {
+    display: inline;
+}
+header h1 span {
+    color: var(--color-blue);
+}
+
+
+header nav {
+    display: inline;
+}
+
+header nav ul {
+    display: inline;
+}
+
+header nav ul li {
+    display: inline;
+    margin:0 3% ;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    color: var(--color-blue-70);
+}
+
+header nav ul li a:hover {
+    font-weight: bold;
+    color: var(--color-blue);
+}
+
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-blue-90);
+    padding:var(--padding-footer) var(--padding-footer);
+}
+
+footer h6 {
+    text-align: center;
+    font-weight: normal;
+    color: var(--color-white);
+}
+footer h6 a {
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+
+
+/* -------------------- SECTION ANA SAYFA -------------------- */
+
+section {
+    display: flex;
+    margin:0 var(--margin-main);
+}
+
+section .cart {
+    margin-top: var(--margin);
+    display: inline; 
+    color: var(--color-blue);
+}
+section .cart span {
+    font-size: 4rem;
+}
+
+section .cart h6 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+section .cart h6, span {
+    display: inline-block;
+}
+
+/* -------------------- SECTION ÜRÜNLER -------------------- */
+
+
+
+section.main {
+    display: block;
+}
+
+section .bar {
+    width: 100%;
+}
+
+section .bar a{
+    display: inline-flex;
+    padding: 0.06rem 1rem;
+    border: var(--border-width) solid var(--color-blue-50);
+    border-radius: 5px;
+}
+section .bar a img {
+    margin: auto;
+    width: 1.5rem;
+    height: 1.5rem;
+    bottom: 0;
+}
+
+section .bar input{
+    float: right;
+    display: inline-flex;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border: var(--border-width) solid var(--color-blue-50);
+    border-radius: 5px;
+}
+
+section .bar input:focus{
+    float: right;
+    display: inline-flex;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border: var(--border-width) solid var(--color-blue);
+    border-radius: 5px;
+}
+
+section.main .bar {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+section.main .table table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+section.main .table table thead {
+    height: 4rem;
+    border-bottom: 1px solid var(--color-blue-50);
+    border-radius: 5px;
+}
+
+section.main .table table thead tr th div{
+    display: flex;
+    /* justify-content: center; */
+}
+
+section.main .table table thead tr th div img{
+    height: 1.2rem;
+    margin-left: 3px;
+}
+
+section.main .table table tbody tr {
+    height: 4rem;
+}
+
+section.main .table table tbody tr:nth-child(2n) {
+    background-color: #E6EAF1;
+}
+
+section.main .table table tbody tr td a img{
+    height: 1.2rem;
+    margin-left: 20px;
+}
+
+/* Table size fixed */
+
+/* thead */ 
+section.main .table table thead tr th:first-child{
+    padding-left: 30px;
+}
+
+/* tbody */
+section.main .table table tbody tr td:nth-child(1){
+    padding-left: 30px;
+    min-width: 80px;
+}
+section.main .table table tbody tr td:nth-child(2){
+    min-width: 100px;
+}
+section.main .table table tbody tr td:nth-child(3){
+    min-width: 250px;
+}
+section.main .table table tbody tr td:nth-child(4){
+    min-width: 60px;
+}
+section.main .table table tbody tr td:nth-child(5){
+    min-width: 100px;
+}
+section.main .table table tbody tr td:nth-child(6){
+    min-width: 60px;
+}
+section.main .table table tbody tr td:nth-child(7){
+    min-width: 100px;
+}
+
+section.main .table {
+    overflow-x: auto;
+}
+
+
+
+
+
+
+/* Coustumer page */
+
+
+section.coustumer .table table tbody tr td:nth-child(1){
+    padding-left: 30px;
+    min-width: 80px;
+}
+section.coustumer .table table tbody tr td:nth-child(2){
+    min-width: 130px;
+}
+section.coustumer .table table tbody tr td:nth-child(3){
+    min-width: 170px;
+}
+section.coustumer .table table tbody tr td:nth-child(4){
+    min-width: 80px;
+}
+section.coustumer .table table tbody tr td:nth-child(5){
+    min-width: 100px;
+}
+section.coustumer .table table tbody tr td:nth-child(6){
+    min-width: 100px;
+}
+
+
+
+section.coustumer {
+    display: block;
+}
+
+section.coustumer .table {
+    overflow-x: auto;
+}
+
+
+section.coustumer .bar {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+section.coustumer .table table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+section.coustumer .table table thead {
+    height: 4rem;
+    border-bottom: 1px solid var(--color-blue-50);
+    border-radius: 5px;
+}
+
+section.coustumer .table table thead tr th div{
+    display: flex;
+    /* justify-content: center; */
+}
+
+section.coustumer .table table thead tr th div img{
+    height: 1.2rem;
+    margin-left: 3px;
+}
+
+section.coustumer .table table tbody tr {
+    height: 4rem;
+}
+
+section.coustumer .table table tbody tr:nth-child(2n) {
+    background-color: #E6EAF1;
+}
+
+section.coustumer .table table tbody tr td a img{
+    height: 1.2rem;
+    margin-left: 20px;
+}
+
+
+/* product add */
+
+
+section.add {
+    display: block;
+    margin-top: var(--margin-main);
+}
+
+section.add h1{
+    margin-left: 1rem;
+}
+
+section.add form input {
+    appearance:auto;
+}
+
+section.add form {
+    width: 100%;
+    justify-content: left;
+}
+
+section.add form .input-text {
+    border: 1px solid var(--color-blue-50);
+    border-radius: 2px;
+    margin: 1rem;
+    padding: 0.2rem;
+    width: 50%;
+}
+
+section.add form .input-radio{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+section.add form .input-btn{
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    margin-left: 1rem;
+    padding: 0.3rem 1.1rem;
+}
+section.add form .input-btn:hover{
+    color: var(--color-blue);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-blue);
+    margin-left: 1rem;
+    padding: 0.3rem 1.1rem;
+}
+
+
+/* Login Page */ 
+
+.container{
+    margin-top: 25vh;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    display: inline;
+}
+.container h1 span {
+    color: var(--color-blue);
+}
+
+.container form {
+    padding: 50px;
+}
+
+.container form input{
+    width: 25vw;
+    margin: 30px auto;
+    display: block;
+}

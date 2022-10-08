@@ -1,0 +1,60 @@
+header{
+    padding: 0.5rem 0.5rem;
+}
+
+header img{
+    display: inline;
+}
+header h1{
+    font-size: 1.7rem;
+}
+
+header nav{
+    display: none;
+    transition: all 300ms ease;
+}
+
+header nav ul li{
+    display: block;
+    padding: 5px;
+}
+
+header nav ul li a {
+    text-align: right;
+    display: block;
+    font-size: 0.9rem;
+}
+
+header nav ul li a:hover, li:hover{
+    background-color: var(--color-blue-50);
+    color: white;
+}
+
+
+section {
+    margin: 0 1rem;
+}
+
+section.main .bar {
+    margin-top: 0;
+}
+
+
+
+
+section.add h1{
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 2rem;
+}
+
+section.add form .input-text{
+    width: 100%;
+    margin: 1rem auto
+}
+
+
+.container form input{
+    width: 70vw;
+
+}
