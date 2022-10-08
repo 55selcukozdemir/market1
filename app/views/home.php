@@ -1,7 +1,7 @@
 <?php include "general/header.php" ?>
 
 <!-- --------- _section start --------- -->
-<section>
+<section class="main">
     
     <div class="cart col-6">
         <h6>toplam satış</h6>

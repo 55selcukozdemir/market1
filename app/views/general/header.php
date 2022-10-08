@@ -20,7 +20,7 @@
     <header>
         <h1>Mahalle<span>MARKET</span></h1>
         <img src="<?=ASSETS?>market/img/filter_list_.svg"  onclick="closeMenu()">
-        <nav>
+        <nav class="menu" id="menu">
             <ul>
                 <li><a href="<?=ROOT?>">ANA SAYFA</a></li>
                 <li><a href="<?=ROOT?>product">ÜRÜN</a></li>

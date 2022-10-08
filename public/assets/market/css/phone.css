@@ -31,6 +31,12 @@ header nav ul li a:hover, li:hover{
 }
 
 
+section.main .cart{
+    width: 100%;
+    display: block;
+}
+
+
 section {
     margin: 0 1rem;
 }

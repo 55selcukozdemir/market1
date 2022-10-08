@@ -21,7 +21,7 @@
             </thead>
             <tbody>
 
-            <?php if (!isset($data)){ ?>
+            <?php if (isset($data)){ ?>
 
             <?php foreach($data as $d): ?>
 
