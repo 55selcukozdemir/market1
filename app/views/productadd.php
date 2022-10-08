@@ -25,6 +25,7 @@ if(isset($data["data"]) && $data["data"] != []){
         <input class="text-box input-text" name="count" value="<?=$count?>" type="number" placeholder="sayı">
         <div>
 
+       
         
 
         <?php foreach($data["category"] as $catecory): ?>
