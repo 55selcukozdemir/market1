@@ -4,9 +4,15 @@ class Productadd extends Controller {
 
 
     function index (){
-      $data['page_title'] = "productadd";
+      $category = $this->loadModel("category");
+      $data["category"] = $category->getAllCategory();
+
 
       $this->view("productadd",$data);
+    }
+
+    function add(){
+      
     }
 }
 

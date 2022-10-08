@@ -14,13 +14,15 @@ Class User
 			$arr['username'] = $POST['username'];
 			$arr['password'] = $POST['password'];
 
+			
+
 			$query = "select * from users where username = :username && password = :password limit 1";
 			$data = $DB->read($query,$arr);
 			if(is_array($data))
 			{
  				//logged in
- 				$_SESSION['user_name'] = $data[0]->username;
-				$_SESSION['user_url'] = $data[0]->url_address;
+ 				$_SESSION['user_name'] = $data[0]["username"];
+				$_SESSION['user_url'] = $data[0]["username"];
 
 				header("Location:". ROOT . "home");
 				die;

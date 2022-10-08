@@ -8,7 +8,7 @@ class Products {
 
 
     function getAllProduct(){
-        $query = "select * from product";
+        $query = "select * from product p LEFT JOIN category c ON p.category_id = c.id";
 		$data =$this->db->read($query);
         return $data;
     }
@@ -16,7 +16,7 @@ class Products {
     function getProduct ($id){
         $query = "select * from product where id=:id limit 1";
         $arr["id"] = $id; 
-		$data = $this->db->read($query, $arr);
+		return $this->db->read($query, $arr);
     }
 
     function updateProduct ($id, $list){
@@ -25,10 +25,10 @@ class Products {
 		$data = $DB->read($query);
     }
 
-    function deleteProduct(){
-        $query = "select * from product where id=$";
+    function deleteProduct($id){
+        $query = "DELETE from product where id=$id";
 		$DB = new Database();
-		$data = $DB->read($query);
+		$DB->read($query);
     }
 
     function insertProduct(){

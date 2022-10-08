@@ -7,8 +7,6 @@ Class Home extends Controller
  	 	
  	 	$data['page_title'] = "Home";
 
- 	 	$posts = $this->loadModel("posts");
- 	 	$result = $posts->get_one("1");
 
  	 	// $pagination = $this->loadModel("pagination");
  	 	// $data['prev_page'] = $pagination->generate_link($pagination->current_page_number() - 1);

@@ -4,7 +4,9 @@ class Product extends Controller {
 
     function index (){
 
-        $data["Pagle_title"]= "home";
+
+        $product = $this->loadModel("products");
+        $data = $product->getAllProduct();
 
         $this->view("product", $data);
     }

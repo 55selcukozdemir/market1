@@ -3,8 +3,6 @@
 Class App 
 {
 
-	private $loginPage = "login";
-
 	private $controller = "home";
 	private $method = "index";
 	private $params = [];
@@ -14,6 +12,7 @@ Class App
 
 
 		$url = $this->splitURL();
+
 
  		if(file_exists("../app/controllers/". strtolower($url[0]) .".php") && isset($_SESSION["user_name"]))
  		{
