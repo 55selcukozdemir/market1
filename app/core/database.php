@@ -36,7 +36,7 @@ Class Database
 
 		if($check)
 		{
-			$data = $stm->fetchAll(PDO::FETCH_OBJ);
+			$data = $stm->fetchAll(PDO::FETCH_ASSOC);
 			if(is_array($data) && count($data) > 0)
 			{
 				return $data;
